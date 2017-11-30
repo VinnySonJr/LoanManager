@@ -13,7 +13,7 @@ public class DataManager {
     		   catch(Exception e){
     			   System.out.print("could not find file");
     		   }
-        }
+       }
        public void readFile(){
     	   while(x.hasNext()){
     		    String a = x.next();
