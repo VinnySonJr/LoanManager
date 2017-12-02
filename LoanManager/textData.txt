@@ -1,2 +1,4 @@
 Bank of America,Car,5
 Chase,House,20
+I need to be like you,business, 0
+OC BANK,BOOKS, 10
