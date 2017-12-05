@@ -16,6 +16,8 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 import logic.Bank;
+import logic.IBank;
+import logic.Loan;
 import dataManagement.DataManager;
 
 public class Mainframe extends JFrame {
@@ -106,7 +108,7 @@ public class Mainframe extends JFrame {
 				String period = textField_1.getText();
 				String selectedBank = comboBox.getSelectedItem().toString();
 				String selectedLoan = comboBox_1.getSelectedItem().toString();
-				Bank myBank = new Bank();
+				IBank myBank = new Loan();
 				Double paymentAmt = myBank.calculateMountlyPayment(dataMap, selectedBank, selectedLoan, period, initialLoanAmt);
 				JOptionPane.showMessageDialog(currentFrame,paymentAmt);
 			}
